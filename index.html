@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation With Custom Select</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+	<div class="container">
+		<form name="registerForm" class="formBlock">
+			<h2 class="title">Form validaion</h2>
+			<div>
+				<label>Name:</label>
+				<input type="text" id="name" placeholder="Name" autocomplete="off"/>
+			</div>
+			<div>
+				<label>Password:</label>
+				<input type="password" id="password" placeholder="Password"/>
+			</div>
+			<div>
+				<label>Email:</label>
+				<input type="email" id="email" placeholder="Email" autocomplete="off"/>
+			</div>
+			<div>
+				<label>Country:</label>
+				<select name="" id="cusSelectbox">
+					<option value="select">select</option>
+					<option value="india">india</option>
+					<option value="nepal">nepal</option>
+					<option value="bangladesh">bangladesh</option>
+					<option value="sri lanka">sri lanka</option>
+					<option value="pakistan">pakistan</option>
+				</select>
+			</div>
+			<div class="btnBlock">
+				<button type="submit" onclick="return validateRegister();" class="btn">Submit</button>
+			</div>
+			<div class="errorBlock">
+				<p id="regisErr"></p>
+			</div>
+		</form>
+	</div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="function.js"></script>
+
+</body>
+</html>
